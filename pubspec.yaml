@@ -1,6 +1,8 @@
 name: new_face_app
-description: App para gestion de productos New Face
+description: App de New Face para productos de limpieza
+
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
@@ -9,10 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
-  assets:
-    - 1785902954916.jpg
-    
+  
