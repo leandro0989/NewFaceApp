@@ -1,6 +1,27 @@
-package com.example.new_face_app
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.new_face_app">
+   <application
+        android:label="New Face"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
 
-import io.flutter.embedding.android.FlutterActivity
-
-class MainActivity: FlutterActivity() {
-}
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+                  
